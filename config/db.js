@@ -9,7 +9,7 @@ const conectDB = async () => {
         });
         console.log(`MongoDB Connected: ${conn.connection.host}`.cyan.underline.bold);
     } catch (err) {
-        console.log(err);
+        console.error(`Error: ${err.message}`.red);
         process.exit(1); //procees es una variable global de node para terminar el proceso y recibe un valor para indicar que ha ocurrido un error
     }
 }

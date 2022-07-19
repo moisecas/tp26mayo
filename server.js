@@ -1,9 +1,12 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import conectDB from './config/db.js';
 
 import products from './data/products.js';
 
 dotenv.config();
+
+connectDB(); //conecta con la base de datos mongoDB y si no existe la crea
 
 const app = express(); 
 

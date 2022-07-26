@@ -21,7 +21,7 @@ const ProductScreen = () => {
     }
 
     fetchProduct()
-  }, [ id ])
+  }, [ id ]) // eslint-disable-line 
   return (
     <>
       <Link className='btn btn-light my-3' to='/'>
